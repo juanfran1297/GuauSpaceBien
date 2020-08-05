@@ -4,16 +4,15 @@ ScriptsOnlyBuild:
     - ButtonsController
     - GameManager
     - HealthBar
+    - HuesoController
     - NaveMovement
     - NaveStats
-    - PlaceHolderController
     - PlanetsMove
+    - Puntuacion
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
@@ -79,11 +78,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11644}
     - Class: 114
-      Script: {instanceID: 12200}
+      Script: {instanceID: 12060}
     - Class: 114
-      Script: {instanceID: 12828}
+      Script: {instanceID: 12202}
     - Class: 114
-      Script: {instanceID: 12936}
+      Script: {instanceID: 12830}
     - Class: 114
       Script: {instanceID: 13246}
     - Class: 114
@@ -96,6 +95,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14270}
     - Class: 114
       Script: {instanceID: 14312}
+    - Class: 114
+      Script: {instanceID: 14368}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -148,11 +149,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12012}
     - Class: 114
-      Script: {instanceID: 12200}
+      Script: {instanceID: 12202}
     - Class: 114
-      Script: {instanceID: 12252}
+      Script: {instanceID: 12254}
     - Class: 114
-      Script: {instanceID: 12900}
+      Script: {instanceID: 12902}
     - Class: 114
       Script: {instanceID: 13246}
     - Class: 114
@@ -290,7 +291,7 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 81f9c1510453d9834f45d6fa9613bbe9
+      Hash: c4907eebb1615bd055f99925f1244483
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -378,6 +379,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: 6ae07dccc3affff3b905793d6fbbfe68
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HuesoController
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -486,12 +493,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
-  - hash:
-      serializedVersion: 2
-      Hash: 9a3d54d2365a28a6c2f453959ef12acd
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlaceHolderController
   - hash:
       serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
@@ -690,6 +691,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ToggleGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 45f3e8ddb5c99f02f27f7fe6611d761a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Puntuacion
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Damage
   - Respawns
+  - RespawnsHuesos
+  - Escudo
   layers:
   - Default
   - TransparentFX

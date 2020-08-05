@@ -6,45 +6,58 @@ using UnityEngine.SocialPlatforms;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject[] placeHolders;
+    public GameObject[] planetsPlaceHolders;
     public GameObject[] planetas;
 
-    public float maxTime = 1;
-    public float timer = 0;
+    public GameObject[] huesosPlaceHolders;
+    public GameObject[] huesos;
 
     public int spawnPlanetas;
-    public int spawnPlaceHolders;
+    public int spawnPlanetsPlaceHolders;
+    public int spawnHuesos;
+    public int spawnHuesosPlaceHolders;
     // Start is called before the first frame update
     void Start()
     {
-        placeHolders = GameObject.FindGameObjectsWithTag("Respawns");
+        planetsPlaceHolders = GameObject.FindGameObjectsWithTag("Respawns"); 
+        huesosPlaceHolders = GameObject.FindGameObjectsWithTag("RespawnsHuesos"); 
+        SpawnearPlanetas();
+        StartCoroutine(PararHuesosPlaceHolder());
     }
 
-    // Update is called once per frame
-    void Update()
-    {        
+    void SpawnearPlanetas()
+    {
         spawnPlanetas = UnityEngine.Random.Range(0, planetas.Length);
-        spawnPlaceHolders = UnityEngine.Random.Range(0, placeHolders.Length);
-        
-        if(timer > maxTime)
-        {
-            if (placeHolders[spawnPlaceHolders].GetComponent<PlaceHolderController>().activo != false)
-            {
-                GameObject newPlanet = Instantiate(planetas[spawnPlanetas]);
-                newPlanet.transform.position = placeHolders[spawnPlaceHolders].transform.position;
-                StartCoroutine(PararPlaceHolder());
-                Destroy(newPlanet, 15);
-                timer = 0;
-            }
-            else return;
-        }
-        timer += Time.deltaTime;
+        spawnPlanetsPlaceHolders = UnityEngine.Random.Range(0, planetsPlaceHolders.Length);
+
+        GameObject newPlanet = Instantiate(planetas[spawnPlanetas]);
+        newPlanet.transform.position = planetsPlaceHolders[spawnPlanetsPlaceHolders].transform.position;
+        StartCoroutine(PararPlaceHolder());
+        Destroy(newPlanet, 16);
+    }
+
+    void SpawnearHuesos()
+    {
+        spawnHuesos = UnityEngine.Random.Range(0, huesos.Length);
+        spawnHuesosPlaceHolders = UnityEngine.Random.Range(0, huesosPlaceHolders.Length);
+
+        GameObject newHueso = Instantiate(huesos[spawnHuesos]);
+        newHueso.transform.position = huesosPlaceHolders[spawnHuesosPlaceHolders].transform.position;
+        StartCoroutine(PararHuesosPlaceHolder());
+        Destroy(newHueso, 15);
     }
 
     IEnumerator PararPlaceHolder()
     {
-        placeHolders[spawnPlaceHolders].GetComponent<PlaceHolderController>().activo = false;
         yield return new WaitForSeconds(2);
-        placeHolders[spawnPlaceHolders].GetComponent<PlaceHolderController>().activo = true;
+        SpawnearPlanetas();
+    }
+
+    IEnumerator PararHuesosPlaceHolder()
+    {
+        var tiempoEspera = UnityEngine.Random.Range(3, 8);
+        Debug.Log(tiempoEspera);
+        yield return new WaitForSeconds(tiempoEspera);
+        SpawnearHuesos();
     }
 }

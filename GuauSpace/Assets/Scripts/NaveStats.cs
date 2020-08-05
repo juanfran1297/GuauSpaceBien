@@ -9,16 +9,19 @@ public class NaveStats : MonoBehaviour
 
     public HealthBar healthBar;
 
-    Collider2D thisCollider;
+    Collider2D[] thisCollider;
     Animator thisAnim;
+
+    PowerUpsController powerUpsController;
 
     // Start is called before the first frame update
     void Start()
     {
         currentEnergy = maxEnergy;
         healthBar.SetMaxHealth(maxEnergy);
-        thisCollider = GetComponent<Collider2D>();
+        thisCollider = GetComponents<Collider2D>();
         thisAnim = GetComponent<Animator>();
+        powerUpsController = GetComponent<PowerUpsController>();
     }
 
     // Update is called once per frame
@@ -28,24 +31,43 @@ public class NaveStats : MonoBehaviour
         {
             FindObjectOfType<NaveMovement>().enabled = false;
         }
+        if (powerUpsController.numGolpesEscudo <= 0)
+        {
+            powerUpsController.invencible = false;
+            powerUpsController.numGolpesEscudo = powerUpsController.golpesEscudo;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Damage")
         {
-            currentEnergy--;
-            healthBar.SetHealth(currentEnergy);
-            Destroy(collision.gameObject);
-            StartCoroutine(Invulnerable());
+            if(powerUpsController.invencible == true)
+            {
+                powerUpsController.DeleteEscudo();
+                Destroy(collision.gameObject);
+            }
+            else
+            {
+                currentEnergy--;
+                healthBar.SetHealth(currentEnergy);
+                Destroy(collision.gameObject);
+                StartCoroutine(Invulnerable());
+            }
         }
     }
 
     IEnumerator Invulnerable()
     {
         thisAnim.SetTrigger("Invulnerable");
-        thisCollider.enabled = false;
+        for(int i = 0; i < thisCollider.Length; i++)
+        {
+            thisCollider[i].enabled = false;
+        }
         yield return new WaitForSeconds(3f);
-        thisCollider.enabled = true;
+        for (int i = 0; i < thisCollider.Length; i++)
+        {
+            thisCollider[i].enabled = true;
+        }
     }
 }
