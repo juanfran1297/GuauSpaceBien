@@ -32,10 +32,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -106,27 +104,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12062}
     - Class: 114
-      Script: {instanceID: 12204}
+      Script: {instanceID: 12190}
     - Class: 114
-      Script: {instanceID: 12832}
+      Script: {instanceID: 12206}
     - Class: 114
-      Script: {instanceID: 12904}
+      Script: {instanceID: 12836}
     - Class: 114
-      Script: {instanceID: 13248}
+      Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 13560}
+      Script: {instanceID: 13252}
     - Class: 114
-      Script: {instanceID: 13660}
+      Script: {instanceID: 13564}
     - Class: 114
-      Script: {instanceID: 13834}
+      Script: {instanceID: 13664}
     - Class: 114
-      Script: {instanceID: 14272}
+      Script: {instanceID: 13840}
     - Class: 114
-      Script: {instanceID: 14314}
+      Script: {instanceID: 14278}
     - Class: 114
-      Script: {instanceID: 14370}
+      Script: {instanceID: 14320}
     - Class: 114
-      Script: {instanceID: 16154}
+      Script: {instanceID: 14378}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -185,25 +183,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12014}
     - Class: 114
-      Script: {instanceID: 12204}
+      Script: {instanceID: 12206}
     - Class: 114
-      Script: {instanceID: 12256}
+      Script: {instanceID: 12258}
     - Class: 114
-      Script: {instanceID: 12904}
+      Script: {instanceID: 12908}
     - Class: 114
-      Script: {instanceID: 13248}
+      Script: {instanceID: 13252}
     - Class: 114
-      Script: {instanceID: 13266}
+      Script: {instanceID: 13270}
     - Class: 114
-      Script: {instanceID: 13660}
+      Script: {instanceID: 13664}
     - Class: 114
-      Script: {instanceID: 13936}
+      Script: {instanceID: 13802}
     - Class: 114
-      Script: {instanceID: 14272}
+      Script: {instanceID: 13942}
     - Class: 114
-      Script: {instanceID: 27050}
+      Script: {instanceID: 14278}
     - Class: 114
-      Script: {instanceID: 27052}
+      Script: {instanceID: 14326}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -439,6 +437,12 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
+      Hash: fef76b2c01995243ae7b5fbb3bef0789
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HuesoMove
+  - hash:
+      serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -631,6 +635,12 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
+      Hash: b842b32ac4047119348416ae9655112d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ControlSonidos
+  - hash:
+      serializedVersion: 2
       Hash: 4a8c70c4c520fbc51cb3a14b3ac4f4f1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -733,6 +743,12 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
+      Hash: ad28560967de6ccf34d98226b761a40b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AudioManager
+  - hash:
+      serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -749,26 +765,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: fef76b2c01995243ae7b5fbb3bef0789
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: HuesoMove
-  - hash:
-      serializedVersion: 2
-      Hash: b842b32ac4047119348416ae9655112d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ControlSonidos
-  - hash:
-      serializedVersion: 2
-      Hash: ad28560967de6ccf34d98226b761a40b
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AudioManager
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Game.unity
-  playerPath: C:/Users/jfran/Desktop/GuauSpace.apk
+  playerPath: D:/GitHub/GuauSpaceBien/APKs y Key/GuauSpace.aab

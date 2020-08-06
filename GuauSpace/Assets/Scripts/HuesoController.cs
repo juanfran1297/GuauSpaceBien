@@ -15,6 +15,7 @@ public class HuesoController : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
+            FindObjectOfType<AudioManager>().Play("Acierto");
             FindObjectOfType<Puntuacion>().puntos  += valorHuesos;
             Destroy(this.gameObject);
             puntuacion.CalcularVelocidad();

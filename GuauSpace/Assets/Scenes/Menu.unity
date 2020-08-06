@@ -494,6 +494,24 @@ MonoBehaviour:
     audioSource: {fileID: 0}
     volume: 0.014
     pitch: 1
+  - name: Acierto
+    clip: {fileID: 8300000, guid: 46ef21b1c931b664082af98048b9079b, type: 3}
+    loop: 0
+    audioSource: {fileID: 0}
+    volume: 0.014
+    pitch: 1
+  - name: Fallo
+    clip: {fileID: 8300000, guid: 1cb3e02b8bb0fd6469b8752463b9c576, type: 3}
+    loop: 0
+    audioSource: {fileID: 0}
+    volume: 0.014
+    pitch: 1
+  - name: Derrota
+    clip: {fileID: 8300000, guid: 8e3ec8d14a6d9db46814babd72355842, type: 3}
+    loop: 1
+    audioSource: {fileID: 0}
+    volume: 0.014
+    pitch: 1
 --- !u!4 &483814055
 Transform:
   m_ObjectHideFlags: 0

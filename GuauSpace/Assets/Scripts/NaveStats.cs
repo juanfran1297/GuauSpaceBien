@@ -63,6 +63,7 @@ public class NaveStats : MonoBehaviour
                 Destroy(collision.gameObject);
                 StartCoroutine(Invulnerable());
             }
+            FindObjectOfType<AudioManager>().Play("Fallo");
         }
     }
 
