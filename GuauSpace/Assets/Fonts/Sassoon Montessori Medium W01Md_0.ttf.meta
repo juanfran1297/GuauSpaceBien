@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 48a9227a6d9c9164aad7aaa69fd7e907
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: SassoonMontessoriMediumW01-Md
+  fontNames:
+  - SassoonMontessoriMediumW01-Md
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c175c515df537cf459b9c04997d0e52c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

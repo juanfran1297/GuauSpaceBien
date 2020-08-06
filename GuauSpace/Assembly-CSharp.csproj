@@ -63,14 +63,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\HuesoController.cs" />
-    <Compile Include="Assets\PowerUpsController.cs" />
+    <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\Audio\ControlSonidos.cs" />
+    <Compile Include="Assets\Scripts\Audio\Sound.cs" />
     <Compile Include="Assets\Scripts\ButtonsController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\HuesoController.cs" />
+    <Compile Include="Assets\Scripts\HuesoMove.cs" />
     <Compile Include="Assets\Scripts\NaveMovement.cs" />
     <Compile Include="Assets\Scripts\NaveStats.cs" />
     <Compile Include="Assets\Scripts\PlanetsMove.cs" />
+    <Compile Include="Assets\Scripts\PowerUpsController.cs" />
     <Compile Include="Assets\Scripts\Puntuacion.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />

@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 3334759018679251532}
   - component: {fileID: 3334759018679251533}
   - component: {fileID: 3334759018679251538}
-  - component: {fileID: 3334759018679251537}
   - component: {fileID: 3334759018679251536}
+  - component: {fileID: 8463525767478449449}
   m_Layer: 0
   m_Name: HuesoNormal
   m_TagString: Untagged
@@ -130,19 +130,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.7497644, y: 1.6942508}
   m_EdgeRadius: 0
---- !u!114 &3334759018679251537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3334759018679251534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 745b50c1fe966ea478ec1dfd2544e4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!114 &3334759018679251536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,3 +143,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valorHuesos: 1
+--- !u!114 &8463525767478449449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3334759018679251534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f9ebc4346c81540a689dba76bd46f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntuacion: {fileID: 0}

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 7437863494465777959}
   - component: {fileID: 7437863494465777958}
   - component: {fileID: 7437863494465777957}
-  - component: {fileID: 7437863494465777956}
   - component: {fileID: 2079642176958340933}
   - component: {fileID: 483514191428942407}
+  - component: {fileID: 8212986117014976996}
   m_Layer: 0
   m_Name: HuesoEscudo
   m_TagString: Escudo
@@ -98,19 +98,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   valorHuesos: 1
---- !u!114 &7437863494465777956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7437863494465777979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 745b50c1fe966ea478ec1dfd2544e4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
 --- !u!61 &2079642176958340933
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -156,3 +143,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8212986117014976996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7437863494465777979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0f9ebc4346c81540a689dba76bd46f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puntuacion: {fileID: 0}

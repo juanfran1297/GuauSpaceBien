@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NaveStats : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class NaveStats : MonoBehaviour
     public float currentEnergy;
 
     public HealthBar healthBar;
+
+    public GameObject canvasJuego;
+    public GameObject canvasFinal;
 
     Collider2D[] thisCollider;
     Animator thisAnim;
@@ -17,6 +21,8 @@ public class NaveStats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        canvasJuego.SetActive(true);
+        canvasFinal.SetActive(false);
         currentEnergy = maxEnergy;
         healthBar.SetMaxHealth(maxEnergy);
         thisCollider = GetComponents<Collider2D>();
@@ -30,6 +36,9 @@ public class NaveStats : MonoBehaviour
         if(currentEnergy <= 0)
         {
             FindObjectOfType<NaveMovement>().enabled = false;
+            //SceneManager.LoadScene("Final");
+            canvasJuego.SetActive(false);
+            canvasFinal.SetActive(true);
         }
         if (powerUpsController.numGolpesEscudo <= 0)
         {
