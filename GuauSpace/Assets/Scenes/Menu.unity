@@ -492,7 +492,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 1f1d46efb23be6747ab99813bd3e1a59, type: 3}
     loop: 1
     audioSource: {fileID: 0}
-    volume: 0.014
+    volume: 0.034
     pitch: 1
   - name: Acierto
     clip: {fileID: 8300000, guid: 46ef21b1c931b664082af98048b9079b, type: 3}
@@ -832,10 +832,10 @@ RectTransform:
   m_Father: {fileID: 987691168}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -98, y: 42.228}
-  m_SizeDelta: {x: 49.739594, y: 45.161407}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -55, y: -54}
+  m_SizeDelta: {x: 49.739594, y: 45.161377}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &987691164
 GameObject:
@@ -1322,7 +1322,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a5df38e2f5dac4f42a3ccc0bf32e7a97, type: 3}
+  m_Sprite: {fileID: 1450960814791432203, guid: 8932fac722e49af46bc13e9d9d57c54d,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1561,10 +1562,10 @@ RectTransform:
   m_Father: {fileID: 987691168}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -161.6, y: 41.97}
-  m_SizeDelta: {x: 49.739594, y: 45.161407}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -118.600006, y: -54.258057}
+  m_SizeDelta: {x: 49.739594, y: 45.161377}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1657998556
 MonoBehaviour:

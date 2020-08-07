@@ -13,6 +13,7 @@ ScriptsOnlyBuild:
     - PlanetsMove
     - PowerUpsController
     - Puntuacion
+    - pauseController
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
@@ -84,47 +85,49 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11192}
-    - Class: 114
-      Script: {instanceID: 11478}
+      Script: {instanceID: 11194}
     - Class: 114
       Script: {instanceID: 11480}
     - Class: 114
-      Script: {instanceID: 11512}
+      Script: {instanceID: 11482}
     - Class: 114
-      Script: {instanceID: 11536}
+      Script: {instanceID: 11514}
     - Class: 114
-      Script: {instanceID: 11606}
+      Script: {instanceID: 11538}
     - Class: 114
-      Script: {instanceID: 11636}
+      Script: {instanceID: 11608}
     - Class: 114
-      Script: {instanceID: 11646}
+      Script: {instanceID: 11638}
     - Class: 114
-      Script: {instanceID: 12014}
+      Script: {instanceID: 11648}
     - Class: 114
-      Script: {instanceID: 12062}
+      Script: {instanceID: 12016}
     - Class: 114
-      Script: {instanceID: 12190}
+      Script: {instanceID: 12064}
     - Class: 114
-      Script: {instanceID: 12206}
+      Script: {instanceID: 12192}
     - Class: 114
-      Script: {instanceID: 12836}
+      Script: {instanceID: 12208}
     - Class: 114
-      Script: {instanceID: 12908}
+      Script: {instanceID: 12838}
     - Class: 114
-      Script: {instanceID: 13252}
+      Script: {instanceID: 12910}
     - Class: 114
-      Script: {instanceID: 13564}
+      Script: {instanceID: 13254}
     - Class: 114
-      Script: {instanceID: 13664}
+      Script: {instanceID: 13566}
     - Class: 114
-      Script: {instanceID: 13840}
+      Script: {instanceID: 13666}
     - Class: 114
-      Script: {instanceID: 14278}
+      Script: {instanceID: 13842}
     - Class: 114
-      Script: {instanceID: 14320}
+      Script: {instanceID: 14280}
     - Class: 114
-      Script: {instanceID: 14378}
+      Script: {instanceID: 14322}
+    - Class: 114
+      Script: {instanceID: 14380}
+    - Class: 114
+      Script: {instanceID: 18234}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -177,31 +180,31 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11192}
+      Script: {instanceID: 11194}
     - Class: 114
-      Script: {instanceID: 11536}
+      Script: {instanceID: 11538}
     - Class: 114
-      Script: {instanceID: 12014}
+      Script: {instanceID: 12016}
     - Class: 114
-      Script: {instanceID: 12206}
+      Script: {instanceID: 12208}
     - Class: 114
-      Script: {instanceID: 12258}
+      Script: {instanceID: 12260}
     - Class: 114
-      Script: {instanceID: 12908}
+      Script: {instanceID: 12910}
     - Class: 114
-      Script: {instanceID: 13252}
+      Script: {instanceID: 13254}
     - Class: 114
-      Script: {instanceID: 13270}
+      Script: {instanceID: 13272}
     - Class: 114
-      Script: {instanceID: 13664}
+      Script: {instanceID: 13666}
     - Class: 114
-      Script: {instanceID: 13802}
+      Script: {instanceID: 13804}
     - Class: 114
-      Script: {instanceID: 13942}
+      Script: {instanceID: 13944}
     - Class: 114
-      Script: {instanceID: 14278}
+      Script: {instanceID: 14280}
     - Class: 114
-      Script: {instanceID: 14326}
+      Script: {instanceID: 14328}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -765,6 +768,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pausa
+  - hash:
+      serializedVersion: 2
+      Hash: 8ae9a00af44b616fc745208e7ad1497d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: pauseController
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity

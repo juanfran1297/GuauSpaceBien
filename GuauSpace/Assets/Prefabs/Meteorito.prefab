@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3407724743276874571}
   - component: {fileID: 3407724743276874580}
   - component: {fileID: 2410284930052800221}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Meteorito
   m_TagString: Damage
   m_Icon: {fileID: 0}
@@ -131,4 +131,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 745b50c1fe966ea478ec1dfd2544e4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  puntuacion: {fileID: 0}

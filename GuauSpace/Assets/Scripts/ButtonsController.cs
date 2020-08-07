@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ButtonsController : MonoBehaviour
 {
+   
     public void CargarEscena(string scene)
     {
         SceneManager.LoadScene(scene);
@@ -14,4 +15,6 @@ public class ButtonsController : MonoBehaviour
     {
         Application.Quit();
     }
+
+    
 }

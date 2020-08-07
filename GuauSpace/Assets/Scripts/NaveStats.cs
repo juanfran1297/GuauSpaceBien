@@ -13,7 +13,6 @@ public class NaveStats : MonoBehaviour
     public GameObject canvasJuego;
     public GameObject canvasFinal;
 
-    Collider2D[] thisCollider;
     Animator thisAnim;
 
     PowerUpsController powerUpsController;
@@ -25,7 +24,6 @@ public class NaveStats : MonoBehaviour
         canvasFinal.SetActive(false);
         currentEnergy = maxEnergy;
         healthBar.SetMaxHealth(maxEnergy);
-        thisCollider = GetComponents<Collider2D>();
         thisAnim = GetComponent<Animator>();
         powerUpsController = GetComponent<PowerUpsController>();
     }
@@ -70,14 +68,9 @@ public class NaveStats : MonoBehaviour
     IEnumerator Invulnerable()
     {
         thisAnim.SetTrigger("Invulnerable");
-        for(int i = 0; i < thisCollider.Length; i++)
-        {
-            thisCollider[i].enabled = false;
-        }
+        this.gameObject.layer = 0;
+
         yield return new WaitForSeconds(3f);
-        for (int i = 0; i < thisCollider.Length; i++)
-        {
-            thisCollider[i].enabled = true;
-        }
+        this.gameObject.layer = 8;
     }
 }
