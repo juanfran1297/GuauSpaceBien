@@ -109,25 +109,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12208}
     - Class: 114
-      Script: {instanceID: 12838}
+      Script: {instanceID: 12840}
     - Class: 114
-      Script: {instanceID: 12910}
+      Script: {instanceID: 12912}
     - Class: 114
-      Script: {instanceID: 13254}
+      Script: {instanceID: 13256}
     - Class: 114
-      Script: {instanceID: 13566}
+      Script: {instanceID: 13442}
     - Class: 114
-      Script: {instanceID: 13666}
+      Script: {instanceID: 13570}
     - Class: 114
-      Script: {instanceID: 13842}
+      Script: {instanceID: 13670}
     - Class: 114
-      Script: {instanceID: 14280}
+      Script: {instanceID: 13846}
     - Class: 114
-      Script: {instanceID: 14322}
+      Script: {instanceID: 14284}
     - Class: 114
-      Script: {instanceID: 14380}
+      Script: {instanceID: 14326}
     - Class: 114
-      Script: {instanceID: 18234}
+      Script: {instanceID: 14384}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -190,21 +190,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12260}
     - Class: 114
-      Script: {instanceID: 12910}
+      Script: {instanceID: 12912}
     - Class: 114
-      Script: {instanceID: 13254}
+      Script: {instanceID: 13256}
     - Class: 114
-      Script: {instanceID: 13272}
+      Script: {instanceID: 13274}
     - Class: 114
-      Script: {instanceID: 13666}
+      Script: {instanceID: 13670}
     - Class: 114
-      Script: {instanceID: 13804}
+      Script: {instanceID: 13808}
     - Class: 114
-      Script: {instanceID: 13944}
+      Script: {instanceID: 13948}
     - Class: 114
-      Script: {instanceID: 14280}
+      Script: {instanceID: 14284}
     - Class: 114
-      Script: {instanceID: 14328}
+      Script: {instanceID: 14332}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -519,6 +519,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pausa
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: RemoteTestResultSender
@@ -612,6 +618,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: TimelineAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 8ae9a00af44b616fc745208e7ad1497d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: pauseController
   - hash:
       serializedVersion: 2
       Hash: 8001a5f7502aab37e42206da015e6914
@@ -768,18 +780,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Pausa
-  - hash:
-      serializedVersion: 2
-      Hash: 8ae9a00af44b616fc745208e7ad1497d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: pauseController
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity
